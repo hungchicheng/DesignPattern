@@ -1,40 +1,32 @@
+function FuncNew( obj ) -- for Inheritance 
+	function obj:new( o )
+		o = o or {}
+	  	setmetatable( o, self )
+	  	self.__index = self
+	  	return o
+	end
+	return obj
+end
+
 AttackStrategy = {}
 function AttackStrategy:create()
-	return AttackStrategy:new( nil )
-end
-function AttackStrategy:new( o )
-	o = o or {}
-  	setmetatable( o, self )
-  	self.__index = self
-  	return o
+	return FuncNew( AttackStrategy ):new()
 end
 function AttackStrategy:attack() -- virtual
 	-- do nothing
 end
 
-SwordAttackStrategy = AttackStrategy:new() -- inheritance AttackStrategy
+SwordAttackStrategy = AttackStrategy:create() -- inheritance AttackStrategy
 function SwordAttackStrategy:create()
-	return SwordAttackStrategy:new( nil )
+	return FuncNew( SwordAttackStrategy ):new()
 end
-function SwordAttackStrategy:new( o )
-	o = o or {}
-  	setmetatable( o, self )
-  	self.__index = self
-  	return o
-end
-function SwordAttackStrategy:attack() -- override 
+function SwordAttackStrategy:attack() -- override
 	print( "use sword to attack" )
 end
 
-ArcheryAttackStrategy = AttackStrategy:new() -- inheritance AttackStrategy
+ArcheryAttackStrategy = AttackStrategy:create() -- inheritance AttackStrategy
 function ArcheryAttackStrategy:create()
-	return ArcheryAttackStrategy:new( nil )
-end
-function ArcheryAttackStrategy:new( o )
-	o = o or {}
-  	setmetatable( o, self )
-  	self.__index = self
-  	return o
+	return FuncNew( ArcheryAttackStrategy ):new()
 end
 function ArcheryAttackStrategy:attack() -- override
 	print( "use bow to attack" )
@@ -42,33 +34,26 @@ end
 
 HeroBase = {}
 function HeroBase:create( n, s )
-	local hero = HeroBase:new({
+	return FuncNew( HeroBase ):new({
 		m_name = n,
 		m_strategy = s or AttackStrategy:create()
 	})
-	return hero
-end
-function HeroBase:new( o )
-	o = o or {}
-	setmetatable( o, self )
-	self.__index = self
-	return o
 end
 function HeroBase:attack()
   	print( self.m_name )
   	print( self.m_strategy:attack() )
 end
 
--- local warrior0 = HeroBase:create( "warrior0" )
--- warrior0:attack()
+------------------------------------------------------
 
+-- local warrior0 = HeroBase:create( "warrior0" )
 -- warrior
 local swordAttackStrategy = SwordAttackStrategy:create()
 local warrior1 = HeroBase:create( "warrior1", swordAttackStrategy )
-warrior1:attack()
-
 -- archer
 local archeryAttackStrategy = ArcheryAttackStrategy:create()
 local archer1 = HeroBase:create( "archer1", archeryAttackStrategy )
-archer1:attack()
 
+-- warrior0:attack()
+warrior1:attack()
+archer1:attack()
