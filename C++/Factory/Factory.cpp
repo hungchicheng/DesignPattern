@@ -1,0 +1,1 @@
+https://github.com/hungchicheng/DesignPattern/blob/master/Factory/Factory.cpp
