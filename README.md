@@ -1,4 +1,6 @@
-# DesignPattern
+DesignPattern
+=====================
+
 Design Pattern in Lua & C++ // Lua&C++版軟體設計模式練習
 
 Detail in Blog // 詳細內容請直接參考部落格

@@ -11,7 +11,7 @@ end
 Singleton = {}
 function Singleton:Singleton()
 	-- Here will be the instance stored.
-	local m_instance = nil -- private
+	local m_instance = nil -- Private
 
 	-- Static access method.
 	function self:getInstance()
@@ -31,10 +31,10 @@ function Singleton:Singleton() end
 ------------------------------------------------------
 
 -- local s = Singleton:new()
--- s:getInstance() -- lua error
+-- s:getInstance() -- Lua error
 local s = Singleton:getInstance()
 print(s)
--- Singleton:Singleton() -- Won't work
+-- Singleton:Singleton() -- Don't work
 local r = Singleton:getInstance()
 -- The addresses will be the same.
 print(r)

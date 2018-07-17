@@ -4,18 +4,18 @@ using namespace std;
 class Singleton
 {
 private:
-    /* Here will be the instance stored. */
+    // Here will be the instance stored.
     static Singleton* m_instance;
     
-    /* Private constructor to prevent instancing. */
+    // Private constructor to prevent instancing.
     Singleton();
     
 public:
-    /* Static access method. */
+    // Static access method.
     static Singleton* getInstance();
 };
 
-/* Null, because instance will be initialized on demand. */
+// Start with 0 to create a new object
 Singleton* Singleton::m_instance = 0;
 
 Singleton* Singleton::getInstance()
@@ -36,11 +36,11 @@ Singleton::Singleton()
 
 int main()
 {
-    //new Singleton(); // Won't work
+    //new Singleton(); // Don't work
     Singleton* s = Singleton::getInstance(); // Ok
     cout << s << endl;
     Singleton* r = Singleton::getInstance();
-    /* The addresses will be the same. */
+    // The Addresses will be the same.
     cout << r << endl;
     
 }
