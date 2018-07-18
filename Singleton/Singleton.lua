@@ -1,3 +1,4 @@
+-- Inheritance Func
 function FuncNew( obj )
 	function obj:new( o )
 		o = o or {}
@@ -8,6 +9,8 @@ function FuncNew( obj )
 	return obj
 end
 
+------------------------------------------------------
+
 Singleton = {}
 function Singleton:Singleton()
 	-- Here will be the instance stored.
@@ -16,6 +19,7 @@ function Singleton:Singleton()
 	-- Static access method.
 	function self:getInstance()
 		if not m_instance then
+			-- if it's multi-thread symstem, use synchronized to prevent
 			print("new Singleton")
 			m_instance = FuncNew( Singleton ):new()
 		else

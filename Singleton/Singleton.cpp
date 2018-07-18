@@ -22,6 +22,7 @@ Singleton* Singleton::getInstance()
 {
     if (m_instance == 0)
     {
+        // if it's multi-thread symstem, use synchronized to prevent
         cout << "new Singleton" << endl;
         m_instance = new Singleton();
     }
