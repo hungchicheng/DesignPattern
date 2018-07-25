@@ -24,7 +24,7 @@ Object Behavioral物件的合作所構成
 
 - ConcreteObserver : 繼承Observer, 管理與ConcreteSubject的關係, 並且保持與主題的一致性, 實作給update給ConcreteSubject
 
-![Observer pattern UML](https://en.wikipedia.org/wiki/File:Observer_w_update.svg)
+![Observer pattern UML](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/500px-Observer_w_update.svg.png)
 
 ## 舉例(遊戲開發)
 - RXLua( Reactive Extensions for Lua )
