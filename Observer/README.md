@@ -22,7 +22,7 @@ Object Behavioral物件的合作所構成
 
 - ConcreteSubject : 繼承Subject, 儲存Observer想觀察的目標, 實作狀態改變時通知ConcreteObserver
 
-- ConcreteObserver : 繼承Observer, 管理與ConcreteSubject的關係, 並且保持與主題的一致性, 實作給update給ConcreteSubject
+- ConcreteObserver : 繼承Observer, 管理與ConcreteSubject的關係, 並且保持與主題的一致性, 實作update給ConcreteSubject
 
 ![Observer pattern UML](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/500px-Observer_w_update.svg.png)
 
@@ -30,12 +30,10 @@ Object Behavioral物件的合作所構成
 - RXLua( Reactive Extensions for Lua )
 - 玩家財產的變化
 - 課金後的寶石&VIP變化
-- 
 
 # 特點
-1. 減少程式相依性
-2. 新增新的Observer時, 不會影響到其他Subject/Observer
-3. 
+1. 新增新的Observer時, 不會影響到其他Subject/Observer
+2. 減少程式相依性
 
 # 參考
 
@@ -43,6 +41,6 @@ GOF設計模式
 
 Head First 設計模式
 
-<https://en.wikipedia.org/wiki/Singleton_pattern>
+<https://en.wikipedia.org/wiki/Observer_pattern>
 
-<https://zh.wikipedia.org/zh-tw/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F>
+<https://zh.wikipedia.org/wiki/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F>
