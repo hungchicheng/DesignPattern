@@ -6,7 +6,7 @@ without changing the algorithm's structure."
 
 
 # UML
-![Observer pattern UML from wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/200px-Template_Method_UML.svg.png)
+![Observer pattern UML from wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/450px-Template_Method_UML.svg.png)
 
 # 使用時機
 1. 有大量的相同實作時
