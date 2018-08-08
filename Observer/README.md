@@ -4,7 +4,7 @@ Observer
 changes state, all its dependents are notified and updated automatically.
 "
 # 介紹
-Object Behavioral物件的合作所構成
+Object Behavioral 物件的彼此合作所構成.
 
 一對多的狀況下, 當自身改變時通知所有觀察者.
 
@@ -16,13 +16,13 @@ Object Behavioral物件的合作所構成
 
 ## 方式
 主要分成4類別
-- Subject : 給Observer觀察的主題, 並且提供interface來加入觀察or取消觀察
+- Subject : 給Observer觀察的主題, 並且提供interface來加入觀察or取消觀察.
 
-- Observer : 會有一個updating的interface來接受狀態改變的通知
+- Observer : 會有一個updating的interface來接受狀態改變的通知.
 
-- ConcreteSubject : 繼承Subject, 儲存Observer想觀察的目標, 實作狀態改變時通知ConcreteObserver
+- ConcreteSubject : 繼承Subject, 儲存Observer想觀察的目標, 實作狀態改變時通知ConcreteObserver.
 
-- ConcreteObserver : 繼承Observer, 管理與ConcreteSubject的關係, 並且保持與主題的一致性, 實作update給ConcreteSubject
+- ConcreteObserver : 繼承Observer, 管理與ConcreteSubject的關係, 並且保持與主題的一致性, 實作update給ConcreteSubject.
 
 ![Observer pattern UML](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Observer_w_update.svg/500px-Observer_w_update.svg.png)
 
