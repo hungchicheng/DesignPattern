@@ -16,6 +16,11 @@ without changing the algorithm's structure."
 1. 避免程式碼重複
 2. 
 
+# 程式碼
+[C++版本](https://github.com/hungchicheng/DesignPattern/blob/master/TemplateMethod/TemplateMethod.cpp)
+
+[Lua版本](https://github.com/hungchicheng/DesignPattern/blob/master/TemplateMethod/TemplateMethod.lua)
+
 # 參考
 
 GOF設計模式
