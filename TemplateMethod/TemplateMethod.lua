@@ -1,7 +1,7 @@
-function FuncNew( obj ) -- for Inheritance 
-	function obj:new( o )
+function FuncNew(obj) -- for Inheritance 
+	function obj:new(o)
 		o = o or {}
-	  	setmetatable( o, self )
+	  	setmetatable(o, self)
 	  	self.__index = self
 	  	return o
 	end
@@ -10,7 +10,7 @@ end
 
 HeroBase = {}
 function HeroBase:create()
-	return FuncNew( HeroBase ):new()
+	return FuncNew(HeroBase):new()
 end
 function HeroBase:_getHeroName() -- placeholders (virtual)
 	-- do nothing
@@ -32,7 +32,7 @@ end
 
 Warrior = HeroBase:create()  -- inheritance
 function Warrior:create()
-	return FuncNew( Warrior ):new()
+	return FuncNew(Warrior):new()
 end
 function Warrior:_getHeroName() -- implement placeholder methods
 	print("Olberic")
@@ -43,7 +43,7 @@ end
 
 Cleric = HeroBase:create()  -- inheritance
 function Cleric:create()
-	return FuncNew( Cleric ):new()
+	return FuncNew(Cleric):new()
 end
 function Cleric:_getHeroName() -- implement placeholder methods
 	print("Ophilia")
