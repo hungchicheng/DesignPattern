@@ -2,19 +2,19 @@ Template Method
 =====================
 "Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Template Method lets subclass es redefine certain steps of an algorithm
 without changing the algorithm's structure."
-# 介紹
 
-
-# UML
-![Observer pattern UML from wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/450px-Template_Method_UML.svg.png)
+樣板模式, 定義結構給子類別遵守.
 
 # 使用時機
 1. 有大量的相同實作時
-2. 需要控制子類別必須遵守某項項目時
+2. 需要控制子類遵守某些項目時
 
 # 特點
 1. 避免程式碼重複
-2. 
+2. 相依性高
+
+# UML
+![Observer pattern UML from wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/450px-Template_Method_UML.svg.png)
 
 # 程式碼
 [C++版本](https://github.com/hungchicheng/DesignPattern/blob/master/TemplateMethod/TemplateMethod.cpp)
