@@ -14,7 +14,7 @@ without changing the algorithm's structure."
 2. 相依性高
 
 # UML
-![Observer pattern UML from wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/450px-Template_Method_UML.svg.png)
+![Template Method pattern UML from wiki](https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Template_Method_UML.svg/450px-Template_Method_UML.svg.png)
 
 # 程式碼
 [C++版本](https://github.com/hungchicheng/DesignPattern/blob/master/TemplateMethod/TemplateMethod.cpp)
